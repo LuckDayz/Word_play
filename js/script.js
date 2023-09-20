@@ -1,21 +1,28 @@
 // Business Logic
 function sentence(inputSentence) {
-    const uniqueWord = inputSentence.split(' ');
-    let filterWords = uniqueWord.filter(function(words){
-        return words.length >= 3
+    const uniqueWords = inputSentence.split(' ');
+    let reverseWords = [];
+
+    uniqueWords.forEach(function (word) {
+        if (word.length >= 3) {
+            const reversedWord = word.split('').reverse().join('');
+            reverseWords.push(reversedWord);
+        } else {
+            reverseWords.push(word);
+        }
     });
-    const reverseSentence = filterWords.reverse().join(" ");
-    return reverseSentence;
+    return reverseWords.join(' ');
 }
 
-    // UI
-$(document).ready(function(){
-    $("#form").submit(function(event){
-        const inputWord = $("input#word").val();
-        let reverse = sentence(inputWord)
-        
+// UI
+$(document).ready(function () {
+    $("#form").submit(function (event) {
         event.preventDefault();
-        $(".result").html(reverse);
+        const inputSentence = $("input#word").val();
+        const reversedSentence = sentence(inputSentence);
+        const finalResult = reversedSentence + ' ' + inputSentence;
+
+        $(".result").html(finalResult);
         $(".result").show();
     });
 });
