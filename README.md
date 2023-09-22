@@ -27,17 +27,3 @@
 
 ### License 
 >  MIT
-
-  Test-Driven Development
-
-> * Describe: reverseWord()
-
-> * Test: "This section defines a JavaScript function called sentence, which processes an input sentence by reversing individual words with three or more characters while keeping shorter words unchanged."
-
-> * Code:
-> * const input = "Hello world!";
-    const reversedSentence = reverseWord(input);
-    const finalResult = reversedSentence + input
-> * reverseWord(finalResult);
-
-> * Expected Output: "olleH !dlrow Hello world!";
