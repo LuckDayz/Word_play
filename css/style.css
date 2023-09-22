@@ -18,7 +18,7 @@ body {
     border-style: none;
     background-color: aliceblue;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
 
 }
 
@@ -50,4 +50,5 @@ label {
     text-align: center;
     padding: 5px;
     margin-top: 20px;
+    display: none;
 }

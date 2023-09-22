@@ -16,7 +16,7 @@
 > * Javascript
 
 ## Project Description
-> This site prompt user to enter a word manually additonally then reverse the unique word and join them back using join method.  
+> This site prompts users to manually enter a word. Additionally, it reverses individual words with three or more characters while leaving shorter words unchanged.  
 
 ### Setup/Installation Requirment
 > * Clone the project from the repository in [GitHub](https://www.https://github.com/LuckDayz)

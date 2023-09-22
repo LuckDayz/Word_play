@@ -25,6 +25,6 @@ $(document).ready(function () {
         const finalResult = reversedSentence + ' ' + inputSentence;
 
         $(".result").html(finalResult);
-        $(".result").show();
+        $(".containerBody").show();
     });
 });
